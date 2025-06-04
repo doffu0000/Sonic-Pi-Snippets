@@ -1,11 +1,11 @@
 # INITIALIZE MASTER VALUES
-use_bpm 40 
+use_bpm 40
 use_random_seed 0
 
 # LOAD IN SAMPLE LIBRARIES
-sampleLibA = "/DESKTOP/Drum Kits _ Samples/QY100 Chops/" 
-sampleLibB = "/DESKTOP/Drum Kits _ Samples/Waldo/Loops/"
-hat = "/DESKTOP/Drum Kits _ Samples/Waldo/Loops/", 1
+sampleLibA = "/Users/sheakennedy/Desktop/Elder Desktop/DESKTOP/Drum Kits _ Samples/QY100 Chops/"
+sampleLibB = "/Users/sheakennedy/Desktop/Elder Desktop/DESKTOP/Drum Kits _ Samples/Waldo/Loops/"
+hat = "/Users/sheakennedy/Desktop/Elder Desktop/DESKTOP/Drum Kits _ Samples/Waldo/Loops/", 1
 
 # AUTOMATION
 lfo0 = (line 70, 100, inclusive: true, steps: 16).mirror
@@ -18,7 +18,7 @@ lfo5 = (line 80, 120, inclusive: true, steps: 8).mirror
 lfo5r = (line 120, 80, inclusive: true, steps: 8).mirror
 
 # MODIFIERS
-rate_mod = 1 
+rate_mod = 1
 pat_mod = 1
 
 # LEVELS
@@ -88,7 +88,7 @@ live_loop :inst3 do
   with_fx :sound_out_stereo, output: 9 do  # ch 9-10
     if(inst3_lvl != 0)
       # === Settings ===
-      sample_path = "/DESKTOP/Drum Kits _ Samples/Freesound/CC0/Bird/", choose([1,6,2])
+      sample_path = "/Users/sheakennedy/Desktop/Elder Desktop/DESKTOP/Drum Kits _ Samples/Freesound/CC0/Bird/", choose([1,6,2])
       total_length = 14.0                        # Length of the sample in seconds
       section_length = 4 * (60.0 / current_bpm)  # 1 measure of 4/4
       fade_time = section_length / 4.0           # 1/4 of section for smooth fade
@@ -218,7 +218,7 @@ live_loop :inst5 do
 end
 
 define :doppler_effect do
-  sample_path = "/DESKTOP/Drum Kits _ Samples/Waldo/One Shots/", 6
+  sample_path = "/Users/sheakennedy/Desktop/Elder Desktop/DESKTOP/Drum Kits _ Samples/Waldo/One Shots/", 6
   duration = 3.8  # Now matches loop trigger time
   steps = 128
   
@@ -253,6 +253,3 @@ define :doppler_effect do
     end
   end
 end
-
-
-
