@@ -88,7 +88,7 @@ live_loop :inst3 do
   with_fx :sound_out_stereo, output: 9 do  # ch 9-10
     if(inst3_lvl != 0)
       # === Settings ===
-      sample_path = "/Users/sheakennedy/Desktop/Elder Desktop/DESKTOP/Drum Kits _ Samples/Freesound/CC0/Bird/", choose([1,6,2])
+      sample_path = "/DESKTOP/Drum Kits _ Samples/Freesound/CC0/Bird/", choose([1,6,2])
       total_length = 14.0                        # Length of the sample in seconds
       section_length = 4 * (60.0 / current_bpm)  # 1 measure of 4/4
       fade_time = section_length / 4.0           # 1/4 of section for smooth fade
